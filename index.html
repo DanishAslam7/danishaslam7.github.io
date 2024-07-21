@@ -13,18 +13,10 @@
             <p>I’m a Project Scientist in the Computational Genomics Team, <a href="http://www.scfbio-iitd.res.in/">SCFBio</a>, IIT Delhi, India.</p>
         </div>
     </header>
-    <footer>
-        <nav>
-            <a href="#about"><b>About Me</b></a>
-            <a href="#resume"><b>Resume</b></a>
-            <a href="#publications"><b>Publications</b></a>
-            <a href="#contact"><b>Contact</b></a>
-        </nav>
-    </footer>
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <img src="me.PNG" alt="ME">
+            <img src="me.PNG" alt="Portrait of Danish Aslam">
             <p>
                 Hi, I’m Danish. I work at the intersection of Computational Genomics and Machine Learning under the supervision of Prof. B Jayaram. My main motivation right now is deciphering the biophysical translation of eukaryotic genome sequence-based information into computational signals, thereby, presenting applications with real-world impact. I love the interdisciplinary nature of computational biology as it borrows concepts from physics, chemistry, biology, mathematics, and computer science. Below are some of the topics I am curious about and hope to contribute and develop my projects on.
             </p>
@@ -43,31 +35,36 @@
                 In my free time, I enjoy reading, writing poetry, and planning my days beforehand.
             </p>
         </section>
-    </main>
-    <footer>
         <section id="contact">
             <h2>Contact</h2>
             <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on science.</p>
             <p>My current local time is <span id="localTime"></span>.</p>
             <p><a href="mailto:danish2101125@st.jmi.ac.in">danish2101125@st.jmi.ac.in</a></p>
         </section>
-        <script>
-        // JavaScript to display
-            function updateTime() {
-                const now = new Date();
-                const hours = now.getHours().toString().padStart(2, '0');
-                const minutes = now.getMinutes().toString().padStart(2, '0');                                                                                                                                                                                                                                                                                
-                document.getElementById('localTime').textContent = `${hours}:${minutes}`;
-            }
-            setInterval(updateTime, 60000);
-            updateTime();
-        </script>
+    </main>
+    <footer>
+        <nav>
+            <a href="#about"><b>About Me</b></a>
+            <a href="#resume"><b>Resume</b></a>
+            <a href="#publications"><b>Publications</b></a>
+            <a href="#contact"><b>Contact</b></a>
+        </nav>
         <div class="social-links">
-            <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b> ResearchGate </b></a>
-            <a href="https://github.com/DanishAslam7" target="_blank"><b> GitHub </b></a>
-            <a href="www.linkedin.com/in/danishaslam7" target="_blank"><b> LinkedIn </b></a>
-            <a href="mailto:danish2101125@st.jmi.ac.in"><b> Email </b></a>
+            <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b>ResearchGate</b></a>
+            <a href="https://github.com/DanishAslam7" target="_blank"><b>GitHub</b></a>
+            <a href="https://www.linkedin.com/in/danishaslam7" target="_blank"><b>LinkedIn</b></a>
+            <a href="mailto:danish2101125@st.jmi.ac.in"><b>Email</b></a>
         </div>
     </footer>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('localTime').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateTime, 60000);
+        updateTime();
+    </script>
 </body>
 </html>
