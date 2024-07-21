@@ -2,40 +2,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFEFD5; /* Change to your desired background color */
+    background-color: #FFEFD5; /* Background color for the body */
     color: #333;
 }
 
-header {
-    background-color: #8B0000; /* Change to your desired header color */
-    color: white;
-    padding: 2rem;
+.landing {
+    position: relative;
     text-align: center;
-    background-image: url('background.jpg'); /* Add your background image if desired */
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    background: url('dna.jpg') no-repeat center center/cover;
 }
 
-.header-content {
-    background: rgba(0, 0, 0, 0.5); /* Optional: add semi-transparent background for text readability */
+.landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
     padding: 1rem;
     border-radius: 5px;
+    font-size: 2rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
+nav {
+    background-color: #8B0000; /* Header color */
+    text-align: center;
+    padding: 1rem 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
-    background-color: #8B0000; /* Match header color */
     margin: 0;
 }
 
@@ -56,20 +54,34 @@ section {
     max-width: 800px;
 }
 
-section img.profile-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 1rem;
-    border-radius: 50%; /* Optional: make image circular */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-img {
+    max-width: 150px;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 1;
 }
 
 footer {
-    background-color: #8B0000; /* Change to your desired footer color */
+    background-color: #8B0000; /* Footer color */
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
+}
+
+.top-link {
+    display: block;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
