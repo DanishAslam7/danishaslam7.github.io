@@ -6,46 +6,57 @@ body {
     color: #333;
 }
 
-.landing {
-    position: relative;
-    text-align: center;
-    height: 100vh;
-    background: url('dna.jpg') no-repeat center center/cover;
-}
-
-.landing-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    font-size: 2rem;
-}
-
-nav {
+header {
     background-color: #8B0000; /* Header color */
     text-align: center;
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul {
+header ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+header ul li {
     display: inline;
     margin: 0 1rem;
 }
 
-nav ul li a {
+header ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+.landing {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px; /* Adjust for the fixed header */
+}
+
+.landing img {
+    max-width: 100%;
+    max-height: 80vh; /* Ensure the image doesn't exceed the viewport height */
+    object-fit: contain;
+}
+
+.landing-text {
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
 }
 
 section {
