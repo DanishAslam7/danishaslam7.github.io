@@ -52,7 +52,7 @@ header .social-links {
 }
 
 header .social-links a {
-    color: #00aced;
+    color: #000000;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -68,7 +68,7 @@ footer nav {
 }
 
 footer nav a {
-    color: #00aced;
+    color: #000000;
     margin: 0 10px;
     text-decoration: none;
 }
