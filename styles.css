@@ -11,7 +11,7 @@ header {
     padding: 2rem;
     text-align: center;
     margin-bottom: 0; /* Ensure no extra margin below the header */
-    background-image: url('https://www.genome.gov/sites/default/files/tg/en/illustration/acgt.jpg'); /* Path to your background image */
+    background-image: url('dna.jpg'); /* Path to your background image */
     background-size: cover; /* Make sure the background image covers the entire header */
     background-position: contain; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
