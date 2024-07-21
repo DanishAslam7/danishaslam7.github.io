@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top of the container */
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .image-left {
+            margin-right: 15px; /* Space between image and text */
+            width: 150px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,8 +34,10 @@
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <img src="me.png" alt="Danish" />
-        <p>Hi, I’m Danish, a Project Scientist at IIT Delhi. I work at the intersection of Computational Biology and Machine Learning. My main motivation to pursue this field is to translate computational methods to applications with real-world impact. I love the interdisciplinary nature of computational biology as it borrows concepts from physics, chemistry, biology, mathematics, and computer science. Below are some of the topics I am currently developing my projects on.</p>
+        <div class="container">
+            <img src="me.png" alt="Danish" class="image-left" />
+            <p>Hi, I’m Danish, a Project Scientist at IIT Delhi. I work at the intersection of Computational Biology and Machine Learning. My main motivation to pursue this field is to translate computational methods to applications with real-world impact. I love the interdisciplinary nature of computational biology as it borrows concepts from physics, chemistry, biology, mathematics, and computer science. Below are some of the topics I am currently developing my projects on.</p>
+        </div>
         <h3>Topics of Interest:</h3>
         <ul>
             <li>Genomic sequence analysis</li>
