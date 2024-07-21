@@ -1,98 +1,79 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #FFEFD5; /* Background color for the body */
-    color: #333;
+    text-align: center;
 }
 
 header {
-    background-color: #8B0000; /* Header color */
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #2e2e2e;
+    padding: 20px;
 }
 
-header ul {
-    list-style-type: none;
-    padding: 0;
+header .intro h1 {
+    font-size: 3em;
     margin: 0;
 }
 
-header ul li {
-    display: inline;
-    margin: 0 1rem;
+header .intro p {
+    font-size: 1.5em;
 }
 
-header ul li a {
-    color: white;
+header .intro img {
+    width: 50%;
+    margin: 20px 0;
+}
+
+header .social-links a {
+    color: #00aced;
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
-.landing {
-    position: relative;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px; /* Adjust for the fixed header */
+main {
+    padding: 20px;
 }
 
-.landing img {
-    max-width: 100%;
-    max-height: 80vh; /* Ensure the image doesn't exceed the viewport height */
-    object-fit: contain;
+main section {
+    margin-bottom: 40px;
 }
 
-.landing-text {
-    position: absolute;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+main section#about img {
+    width: 200px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+main section#about p, main section#contact p {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+main section#about ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+main section#about ul li {
+    background: #444;
+    margin: 5px 0;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 2rem;
-}
-
-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-}
-
-.about-content {
-    display: flex;
-    align-items: flex-start;
-}
-
-.profile-img {
-    max-width: 150px;
-    margin-right: 2rem;
-    border-radius: 50%;
-}
-
-.about-text {
-    flex: 1;
 }
 
 footer {
-    background-color: #8B0000; /* Footer color */
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
+    background-color: #2e2e2e;
+    padding: 10px;
 }
 
-.top-link {
-    display: block;
-    margin-bottom: 1rem;
-    color: white;
+footer nav a {
+    color: #00aced;
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2rem;
 }
