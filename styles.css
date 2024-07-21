@@ -6,7 +6,8 @@ body {
 }
 
 header {
-    background-color: #8B0000; /* Dark red color for the header */
+     /*background-color: #8B0000; /* Dark red color for the header */
+    background-color: #BC8F8F;
     color: white;
     padding: 2rem;
     text-align: center;
