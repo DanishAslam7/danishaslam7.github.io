@@ -60,7 +60,7 @@ header .social-links a {
 footer {
     background-color: #FFE4E1;
     padding: 10px;
-    text-align: center;
+    text-align: justify;
 }
 
 footer nav {
@@ -95,7 +95,7 @@ main section#contact p {
 }
 
 main section#about ul {
-    text-align: left;
+    text-align: justify;
     list-style: none;
     padding: 0;
     max-width: 600px;
