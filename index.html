@@ -6,21 +6,16 @@
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Flexbox container for image and text */
-        .about-container {
+        .container {
             display: flex;
             align-items: flex-start; /* Align items to the top of the container */
+            border: 1px solid #ccc;
+            padding: 10px;
         }
-        .about-image {
+        .image-left {
             margin-right: 15px; /* Space between image and text */
-        }
-        .about-image img {
             width: 150px; /* Adjust width as needed */
             height: auto; /* Maintain aspect ratio */
-        }
-        .about-text {
-            flex: 1; /* Allow text to take up remaining space */
-            text-align: justify;
         }
     </style>
 </head>
@@ -73,7 +68,7 @@
         <p>Email: danish2101125@st.jmi.ac.in</p>
     </section>
     <footer>
-        <p>&copy; 2024 </p>
+        <p>&copy; 2024</p>
     </footer>
     <script>
         document.getElementById('localTime').innerText = new Date().toLocaleTimeString();
