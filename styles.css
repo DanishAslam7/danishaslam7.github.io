@@ -89,7 +89,7 @@ main section#about img {
 
 main section#about p,
 main section#contact p {
-    text-align: left;
+    text-align: justify;
     margin: 0 auto;
     max-width: 600px;
 }
