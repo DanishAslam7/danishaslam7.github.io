@@ -49,23 +49,25 @@
                 In my free time, I enjoy reading, writing poetry, and planning my days beforehand.
             </p>
         </section>
+    </main>
+    <footer>
         <section id="contact">
             <h2>Contact</h2>
             <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on the state of machine learning in drug design.</p>
             <p>My current local time is <span id="localTime"></span>.</p>
             <p><a href="mailto:danish2101125@st.jmi.ac.in">danish2101125@st.jmi.ac.in</a></p>
         </section>
-    </main>
-    <script>
-        // JavaScript to display local time
-        function updateTime() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            document.getElementById('localTime').textContent = `${hours}:${minutes}`;
-        }
-        setInterval(updateTime, 60000);
-        updateTime();
-    </script>
+        <script>
+        // JavaScript to display
+            function updateTime() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');                                                                                                                                                                                                                                                                                
+                document.getElementById('localTime').textContent = `${hours}:${minutes}`;
+            }
+            setInterval(updateTime, 60000);
+            updateTime();
+        </script>
+    </footer>
 </body>
 </html>
