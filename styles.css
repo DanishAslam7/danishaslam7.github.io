@@ -11,7 +11,7 @@ header {
     color: white;
     padding: 2rem;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 0; /* Ensure no extra margin below the header */
 }
 
 header h1 {
@@ -40,8 +40,13 @@ nav ul li a {
 
 section {
     padding: 2rem;
-    margin: 2rem auto;
+    margin: 0 auto; /* Adjust margin as needed */
     max-width: 800px;
+}
+
+/* Adjust the spacing between sections if needed */
+section:not(:first-of-type) {
+    margin-top: 0; /* Remove top margin for sections except the first one */
 }
 
 section img {
@@ -78,4 +83,6 @@ footer {
 
 .about-text {
     flex: 1; /* Allow text to take up remaining space */
+    text-align: justify; /* Justify text within this container */
+    text-align-last: justify; /* Justify the last line of the paragraph as well */
 }
