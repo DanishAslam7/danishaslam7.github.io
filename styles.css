@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #FFEFD5;
-    color: #000000;
+    color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,7 +9,7 @@ body {
 
 header {
     position: relative;
-    background-color: #FFEFD5;
+    background-color: #fff;
     padding: 0;
     height: 60vh;
     display: flex;
@@ -58,7 +58,7 @@ header .social-links a {
 }
 
 footer {
-    background-color: #2e2e2e;
+    background-color: #FFC0CB;
     padding: 10px;
     text-align: center;
 }
