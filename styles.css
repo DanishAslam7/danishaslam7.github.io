@@ -105,7 +105,7 @@ main section#about img {
 
 main section#about p,
 main section#contact p {
-    text-align: justify; /*changed this*/
+    text-align: justify;
     margin: 0 auto;
     max-width: 600px;
 }
@@ -126,6 +126,25 @@ main section#about ul li {
     border-radius: 5px;
 }
 
+.footer-email {
+    color: #1E90FF; /* DodgerBlue */
+    text-decoration: none;
+}
+
+.footer-email:hover {
+    color: #FF6347; /* Tomato */
+    text-decoration: underline;
+}
+
+.footer-email:active {
+    color: #FF4500; /* OrangeRed */
+    text-decoration: underline;
+}
+
+.footer-email:visited {
+    color: #551A8B; /* Purple */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .intro h1 {
@@ -144,4 +163,3 @@ main section#about ul li {
         font-size: 0.9em;
     }
 }
-
