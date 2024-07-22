@@ -144,3 +144,26 @@ main section#about ul li {
         font-size: 0.9em;
     }
 }
+
+/* Default style for the email link in the footer */
+.footer-email {
+    color: #FFFFF0; /*#1E90FF DodgerBlue */
+    text-decoration: none;
+}
+
+/* Email link style when hovered over */
+.footer-email:hover {
+    color: #FF6347; /* Tomato */
+    text-decoration: underline;
+}
+
+/* Email link style when active (clicked) */
+.footer-email:active {
+    color: #FF4500; /* OrangeRed */
+    text-decoration: underline;
+}
+
+/* Email link style when visited */
+.footer-email:visited {
+    color: #551A8B; /* Purple */
+}
