@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Aslam - Publications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <h1>Danish Aslam</h1>
+            <p>I’m a Project Scientist in the Computational Genomics Team, <a href="http://www.scfbio-iitd.res.in/">SCFBio</a>, IIT Delhi, India.</p>
+        </div>
+    </header>
+    
+    <footer>
+        <nav>
+            <a href="index.html"><b>About Me</b></a>
+            <a href="#resume"><b>Resume</b></a>
+            <a href="publications.html"><b>Publications</b></a>
+            <a href="#contact"><b>Contact</b></a>
+        </nav>
+    </footer>
+    
+    <main>
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>Exon-Intron Boundary Detection Made Easy by Physicochemical Properties of DNA [PREPRINT]</h3>
+            <img src="chemexin.jpg" alt="Research Image 1">
+            <p><b>DOI:</b> <a href="https://doi.org/10.21203/rs.3.rs-4359229/v1">https://doi.org/10.21203/rs.3.rs-4359229/v1</a></p>
+            <p>
+                <b>Abstract:</b> Genome architecture in eukaryotes exhibits high complexity. Amidst the numerous intricacies, genes as non-continuous stretches composed of exons and introns has garnered significant attention and curiosity among researchers. Accurate identification of exon-intron boundary junctions is crucial to decipher the molecular biology governing gene expression of regular and aberrant splicing. The currently employed frameworks for genomic signals, which aim to identify exons and introns within a genomic segment, need to be revised primarily due to the lack of a robust consensus sequence and the limitations posed by the training on available experimental data sets. To tackle these challenges and capitalize on the understanding that deoxyribonucleic acid (DNA) exhibits function-dependent local structural and energetic variations, we present ChemEXIN, an innovative method for predicting exon-intron boundaries. The method utilizes a deep-learning (DL) model alongside tri- and tetra-nucleotide-based structural and energy parameters. ChemEXIN surpasses current methods in accuracy and reliability. Our work represents a significant advancement in exon-intron boundary annotations, with potential implications for understanding gene expression, regulation, and biomedical research.
+            </p>
+            <h3>Book Chapters</h3>
+            <h4>Deep learning in computer-aided drug design: a case study [BOOK CHAPTER]</h4>
+            <p><b>DOI:</b> <a href="https://doi.org/10.1016/B978-0-443-22299-3.00012-8">https://doi.org/10.1016/B978-0-443-22299-3.00012-8</a></p>
+            <p>
+                <b>Abstract:</b> Computer-aided drug design (CADD) is a rapidly growing field that combines the knowledge of computational chemistry, bioinformatics, and pharmacology to aid in the discovery and development of new drugs. CADD utilizes various computational techniques and tools such as molecular modeling, docking, and machine learning (ML) to predict the properties and interactions of potential drug compounds with their biological targets. One of the significant advantages of CADD is its ability to significantly reduce the time and cost of drug development by allowing for the virtual screening of many compounds in silico instead of relying solely on experimental methods, which can also reduce the number of compounds that must be tested in animal models and clinical trials. As a result, CADD has become an essential tool in modern pharmaceutical research. Molecular dynamics (MD) simulations, which may foretell the motion and interactions of atoms and molecules in a biological system, and docking, which can foretell the binding of a medicinal compound to its target protein, are two examples of CADD techniques. Artificial neural networks (ANNs) and random forests are two ML techniques used in CADD for various tasks, including virtual screening, lead optimization, absorption, distribution, metabolism, and excretion (ADMET) prediction.
+            </p>
+            <h4>The Role of Artificial Intelligence and Machine Learning in Autoimmune Disorders [BOOK CHAPTER]</h4>
+            <p><b>DOI:</b> <a href="https://doi.org/10.1007/978-981-99-9029-0_3">https://doi.org/10.1007/978-981-99-9029-0_3</a></p>
+            <p>
+                <b>Abstract:</b> The immune system of an organism responds to threats from outside the body. Autoimmunity in immunology is the system of an organism's immune responses against its healthy cells, tissues, and other typical body parts. Therefore, a disorder known as an autoimmune illness results from an inappropriate immune reaction to a healthy bodily function. The science of developing computers with intelligence that both mimics and exceeds that of humans is known as artificial intelligence (AI). Programs having AI capabilities can contextualize and analyze data to deliver information or automatically initiate operations without the need for human intervention. Furthermore, AI can be attained through machine learning. This branch of AI applies to learning to make ever-better judgments using algorithms to discover patterns and acquire insights from data automatically. In this chapter, we present the role of AI and machine learning to analyze how autoimmunity behaves in conditions like autoimmune diseases. Moreover, we also discussed the impact of employing machine learning techniques to optimize precision medicine for patients.
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on science.</p>
+            <p>My current local time is <span id="localTime"></span>.</p>
+            <p><a class="footer-email" href="mailto:danish2101125@st.jmi.ac.in">danish2101125@st.jmi.ac.in</a></p>
+        </section>
+        <div class="social-links">
+            <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b>ResearchGate</b></a>
+            <a href="https://github.com/DanishAslam7" target="_blank"><b>GitHub</b></a>
+            <a href="https://www.linkedin.com/in/danishaslam7" target="_blank"><b>LinkedIn</b></a>
+            <a href="mailto:danish2101125@st.jmi.ac.in"><b>Email</b></a>
+        </div>
+    </footer>
+    
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('localTime').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateTime, 60000);
+        updateTime();
+    </script>
+</body>
+</html>
