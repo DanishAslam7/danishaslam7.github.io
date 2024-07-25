@@ -45,9 +45,11 @@
         }
 
         .gallery img {
-            width: 30%;
+            flex: 1 1 auto;
+            max-width: 100%;
             height: auto;
             border-radius: 5px;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -57,36 +59,45 @@
             <h1>Danish Aslam</h1>
             <p>I’m a Project Scientist in the Computational Genomics Team, <a href="http://www.scfbio-iitd.res.in/">SCFBio</a>, IIT Delhi, India.</p>
         </div>
-    </header>
-    
-    <footer>
         <nav>
-            <a href="index.html#about"><b>About Me</b></a>
+            <a href="index.html"><b>About Me</b></a>
             <a href="Danish_Aslam_Resume.pdf" target="_blank"><b>Resume</b></a>
             <a href="publications.html"><b>Publications</b></a>
             <a href="projects.html"><b>Projects</b></a>
             <a href="activities.html"><b>Activities</b></a>
-            <a href="index.html#contact"><b>Contact</b></a>
+            <a href="contact.html"><b>Contact</b></a>
         </nav>
-    </footer>
+    </header>
     
     <main>
         <section id="activities">
             <h2>Activities</h2>
             
+            <button type="button" class="collapsible">Certificate of Appreciation</button>
+            <div class="content">
+                <p>Event: Workshop on Computational Biology <b>Role: Speaker</b></p>
+                <img src="resource_person.PNG" alt="Certificate 1">
+            </div>
+            
+            <button type="button" class="collapsible">Certificate of Participation</button>
+            <div class="content">
+                <p>Event: International Conference on Machine Learning <b>Role: Attendee</b></p>
+                <img src="participation_certificate.PNG" alt="Certificate 2">
+            </div>
+            
             <button class="collapsible">Event 1: 7-Days Hands-on Bioinformatics Workshop for Genomic and Proteomic Analysis, 2024</button>
             <div class="content">
-                <p>Role: Resource Person in a workshop organised by the School of Allied Sciences, Dev Bhoomi Uttarakhand University, Dehradun, India, sponsored by DST-SERB under Karyashala Scheme, A Serb Initiative.</p>
+                <p>Role: Resource Person in a workshop organised by School of Allied Sciences, Dev Bhoomi Uttarakhand University, Dehradun, India, sponsored by DST-SERB under Karyashala Scheme, A Serb Initiative.</p>
                 <div class="gallery">
                     <img src="resource_person_me.jpg" alt="Event 1 Picture 1">
-                    <img src="resource_person_token.jpg" alt="Event 1 Picture 2">
+                    <img src="resource_peson_token.jpg" alt="Event 1 Picture 2">
                     <img src="resource_person.PNG" alt="Event 1 Picture 3">
                 </div>
             </div>
 
             <button class="collapsible">Event 2: MS Bioinformatics, Thesis Defense, 2023</button>
             <div class="content">
-                <p>Thesis title: “Development of an Intron-Exon Boundary Junction Prediction Software using Physicochemical DNA features” <b> Thesis advisor: Prof. B. Jayaram, co-advisor: Prof. Rafat Parveen; Grade: A+.</p>
+                <p>Thesis title: “Development of an Intron-Exon Boundary Junction Prediction software using Physicochemical DNA features” <b> Thesis advisor: Prof. B. Jayaram, co-advisor: Prof. Rafat Parveen; Grade: A+.</p>
                 <div class="gallery">
                     <img src="thesis.jpg" alt="Event 2 Picture 1">
                     <img src="thesis_certificate.jpg" alt="Event 2 Picture 2">
@@ -95,7 +106,7 @@
             
             <button class="collapsible">Event 3: Workshop on Algorithms That Transformed Molecular Biology, 2023</button>
             <div class="content">
-                <p>Role: Participated in a one-day workshop by the Indraprastha Institute of Information and Technology, New Delhi. The Workshop featured a series of lectures from eminent scientists and researchers across the world.</p>
+                <p>Role: Participated in a one-day workshop organised by the Indraprastha Institute of Information and Technology, New Delhi. The Workshop featured series of lectures from eminent scientists and researchers across the world.</p>
                 <div class="gallery">
                     <img src="IIITD_me.jpeg" alt="Event 3 Picture 1">
                     <img src="IIITD.png" alt="Event 3 Picture 2">
@@ -126,16 +137,17 @@
                 </div>
             </div>
 
-            <button class="collapsible">Event 7: Marin Debris: A man-made Curse, 2019</button>
+            <button class="collapsible">Event 7: Marin Debris: A man-made curse, 2019</button>
             <div class="content">
                 <p>Poster presented in the National Seminar on "Technology for Environmental Sustainability, Socio-economic Responsibilities and Associated Entrepreneurial Opportunities of the 21st Century" organised by the Department of Chemistry.</p>
                 <div class="gallery">
                     <img src="poster_presentation.JPG" alt="Event 7 Picture 1">
+                    <img src="poster_presentation_book.PNG" alt="Event 7 Picture 2">
                     <img src="poster_presentation_certificate.jpg" alt="Event 7 Picture 3">
                 </div>
             </div>
 
-            <button class="collapsible">Event 8: Book Discussion with the author of the book "Straight To Normal", 2019</button>
+            <button class="collapsible">Event 8: Book Discussion with the author on the book "Straight To Normal"</button>
             <div class="content">
                 <p>In Conversation with Mr. Sharif D. Rangnekar (Author, Straight To Normal), and Mr. Arpit Bhalla (Gender Rights Activist).</p>
                 <div class="gallery">
