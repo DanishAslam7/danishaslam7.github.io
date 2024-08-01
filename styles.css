@@ -1,8 +1,5 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
-
 body {
-    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #FFFFF0; /* Ivory background */
     color: #191970; /* MidnightBlue text color */
     margin: 0;
@@ -26,7 +23,7 @@ header .intro {
     width: 100%;
     height: 100%;
     background: url('acgt.jpg') no-repeat center center/cover;
-    color: #FFFFF0; /* Ivory */
+    color: #191970; /* #FFFFF0 Ivory */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,21 +35,18 @@ header .intro h1,
 header .intro p {
     position: relative;
     z-index: 1;
-    font-family: 'Montserrat', sans-serif;
 }
 
 header .intro h1 {
     font-size: 3em;
     margin: 0;
     padding: 0.5em 0;
-    font-weight: 700;
 }
 
 header .intro p {
     font-size: 1.5em;
     margin: 0;
     padding: 0.5em 0;
-    font-weight: 400;
 }
 
 footer {
@@ -73,8 +67,6 @@ footer nav a {
     color: #FFFFF0; /* Ivory */
     margin: 0 10px;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
 }
 
 footer section#contact {
@@ -184,8 +176,6 @@ main section#about ul li {
     color: #8B0000;
     margin-bottom: 20px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
 
 .skills-grid {
@@ -197,12 +187,9 @@ main section#about ul li {
 .skills-column h4 {
     color: #8B0000;
     margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
 
 .skills-column p {
     margin: 0;
     line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
 }
