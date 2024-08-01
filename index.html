@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Danish Aslam</title>
+    <title>Danish Aslam</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,21 +12,37 @@
             <h1>Danish Aslam</h1>
             <p>I’m a Project Scientist in the Computational Genomics Team, <a href="http://www.scfbio-iitd.res.in/">SCFBio</a>, IIT Delhi, India.</p>
         </div>
+    </header>
+    
+    <footer>
         <nav>
-            <a href="index.html"><b>About Me</b></a>
+            <a href="#about"><b>About Me</b></a>
             <a href="Danish_Aslam_Resume.pdf" target="_blank"><b>Resume</b></a>
             <a href="publications.html"><b>Publications</b></a>
             <a href="projects.html"><b>Projects</b></a>
             <a href="activities.html"><b>Activities</b></a>
-            <a href="contact.html"><b>Contact</b></a>
+            <a href="#contact"><b>Contact</b></a>
         </nav>
-    </header>
-
+    </footer>
+    
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Your existing about me content...</p>
-            
+            <img src="me.PNG" alt="Portrait of Danish Aslam">
+            <p>
+                Hi, I’m Danish. I work at the intersection of Computational Genomics and Machine Learning under the supervision of Prof. B Jayaram. My main motivation right now is deciphering the biophysical translation of eukaryotic genome sequence-based information into computational signals, thereby, presenting applications with real-world impact. I love the interdisciplinary nature of computational biology as it borrows concepts from physics, chemistry, biology, mathematics, and computer science. Below are some of the topics I am curious about and hope to contribute and develop my projects on.
+            </p>
+            <h3>Topics of interest:</h3>
+            <ul>
+                <li>Biophysical Profiling of Eukaryotic Genome Elements</li>
+                <li>Eukaryotic Gene Structure Annotation</li>
+                <li>Machine learning in Genome Annotation</li>
+                <li>Gene Markers in Early-/Late-onset Alzheimer's Disease Progression</li>
+                <li>Spatial/Single-cell -omics to better translate Gene Expression at cellular level</li>
+            </ul>
+            <p>
+                I graduated with a BS in Life Science (Botany, Chemistry, Zoology) at the University of Delhi in 2021 and obtained an MS in Bioinformatics at the Department of Computer Science, Jamia Millia Islamia, India, in 2023. <br> In my free time, I enjoy reading, writing poetry, and planning my days beforehand.
+            </p>
             <div class="skills-box">
                 <h3>Skills and Expertise</h3>
                 <div class="skills-grid">
@@ -55,13 +71,12 @@
             </div>
         </section>
     </main>
-
+    
     <footer>
         <section id="contact">
             <h2>Contact</h2>
             <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on science.</p>
             <p>My current local time is <span id="localTime"></span>.</p>
-            <p><a class="footer-email" href="mailto:danish2101125@st.jmi.ac.in">danish2101125@st.jmi.ac.in</a></p>
         </section>
         <div class="social-links">
             <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b>ResearchGate</b></a>
@@ -70,7 +85,7 @@
             <a href="mailto:danish2101125@st.jmi.ac.in"><b>Email</b></a>
         </div>
     </footer>
-
+    
     <script>
         function updateTime() {
             const now = new Date();
