@@ -163,3 +163,34 @@ main section#about ul li {
         font-size: 0.9em;
     }
 }
+
+.skills-box {
+    border: 2px solid #8B0000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.skills-box h3 {
+    color: #8B0000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skills-column h4 {
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.skills-column p {
+    margin: 0;
+    line-height: 1.5;
+}
+
