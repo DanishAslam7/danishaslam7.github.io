@@ -57,13 +57,12 @@
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html"><b>Home</b></a>
-            <a href="activities.html"><b>Activities</b></a>
-            <a href="projects.html"><b>Projects</b></a>
-            <a href="index.html#contact"><b>Contact</b></a>
-        </nav>
+   <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on science.</p>
+            <p>My current local time is <span id="localTime"></span>.</p>
+        </section>
         <div class="social-links">
             <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b>ResearchGate</b></a>
             <a href="https://github.com/DanishAslam7" target="_blank"><b>GitHub</b></a>
@@ -71,21 +70,16 @@
             <a href="mailto:danish2101125@st.jmi.ac.in"><b>Email</b></a>
         </div>
     </footer>
-
+    
     <script>
-        // JavaScript for collapsible sections
-        const collapsibles = document.querySelectorAll('.collapsible');
-        collapsibles.forEach(collapsible => {
-            collapsible.addEventListener('click', function() {
-                this.classList.toggle('active');
-                const content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        });
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('localTime').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateTime, 60000);
+        updateTime();
     </script>
 </body>
 </html>
