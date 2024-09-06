@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Aslam - Professional Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <h1>Danish Aslam</h1>
+            <p>I’m a Project Scientist in the Computational Genomics Team, <a href="http://www.scfbio-iitd.res.in/scfbiogroup/biocomputinggroup.htm">SCFBio</a>, IIT Delhi, India.</p>
+        </div>
+    </header>
+
+    <footer>
+        <nav>
+            <a href="index.html#about"><b>About Me</b></a>
+            <a href="Danish_Aslam_Resume.pdf" target="_blank"><b>Resume</b></a>
+            <a href="publications.html"><b>Publications</b></a>
+            <a href="projects.html"><b>Projects</b></a>
+            <a href="activities.html"><b>Activities</b></a>
+            <a href="professional_journey.html"><b>Professional Journey</b></a>
+            <a href="index.html#contact"><b>Contact</b></a>
+        </nav>
+    </footer>
+
+    <main>
+        <section id="professional-journey">
+            <h2>Professional Journey</h2>
+            <div class="tree-container">
+                <ul class="tree">
+                    <li>
+                        <span class="caret">Research Intern</span>
+                        <ul class="nested">
+                            <li><strong>Institution:</strong> SCFBio Lab, IIT Delhi</li>
+                            <li><strong>Time Period:</strong> Jan 2018 - Dec 2018</li>
+                            <li><strong>Key Responsibilities:</strong> Worked on biophysical fingerprinting of eukaryotic genomic elements.</li>
+                            <li><strong>Skills Acquired:</strong> Data analysis, genomics tools.</li>
+                            <li><strong>Publications & Achievements:</strong> Published a research paper on biophysical mechanisms.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="caret">Scientific Administrative Assistant</span>
+                        <ul class="nested">
+                            <li><strong>Institution:</strong> ABC Organization</li>
+                            <li><strong>Time Period:</strong> Jan 2019 - Dec 2019</li>
+                            <li><strong>Key Responsibilities:</strong> Managed research coordination and project administration.</li>
+                            <li><strong>Skills Acquired:</strong> Administrative coordination, project management.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="caret">Junior Project Assistant (Tech)</span>
+                        <ul class="nested">
+                            <li><strong>Institution:</strong> XYZ Lab</li>
+                            <li><strong>Time Period:</strong> Jan 2020 - Dec 2020</li>
+                            <li><strong>Key Responsibilities:</strong> Assisted in technical research on gene structural elements.</li>
+                            <li><strong>Skills Acquired:</strong> Bioinformatics, data modeling.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="caret">Project Scientist</span>
+                        <ul class="nested">
+                            <li><strong>Institution:</strong> SCFBio Lab, IIT Delhi</li>
+                            <li><strong>Time Period:</strong> Jan 2021 - Present</li>
+                            <li><strong>Key Responsibilities:</strong> Leading research in genome workbench development.</li>
+                            <li><strong>Skills Acquired:</strong> Advanced computational biology, AI techniques.</li>
+                            <li><strong>Publications & Achievements:</strong> Published 2 papers, developed ChemEXIN.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on science.</p>
+            <p>My current local time is <span id="localTime"></span>.</p>
+        </section>
+        <div class="social-links">
+            <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b>ResearchGate</b></a>
+            <a href="https://github.com/DanishAslam7" target="_blank"><b>GitHub</b></a>
+            <a href="https://www.linkedin.com/in/danishaslam7" target="_blank"><b>LinkedIn</b></a>
+            <a href="mailto:danish2101125@st.jmi.ac.in"><b>Email</b></a>
+        </div>
+    </footer>
+
+    <script>
+        // Time Update Script
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('localTime').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateTime, 60000);
+        updateTime();
+
+        // Collapsible Tree Script
+        document.addEventListener("DOMContentLoaded", function() {
+            var toggler = document.getElementsByClassName("caret");
+            for (var i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active");
+                    this.classList.toggle("caret-down");
+                });
+            }
+        });
+    </script>
+</body>
+</html>
