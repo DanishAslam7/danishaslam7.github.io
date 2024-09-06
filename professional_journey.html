@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Journey - Danish Aslam</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Professional Journey Page Specific Styles */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #8B0000; /* Red color for headings */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .journey {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .journey li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .journey li:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+            border-left: 2px solid #8B0000; /* Red line for journey items */
+        }
+
+        .journey li:last-child:before {
+            height: 50%;
+        }
+
+        .collapsible {
+            background-color: #8B0000; /* Red background */
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .collapsible:after {
+            content: '\002B'; /* Plus sign for collapsed state */
+            font-size: 13px;
+            color: white;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .collapsible.active:after {
+            content: "\2212"; /* Minus sign for expanded state */
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1; /* Light background for content */
+            margin-bottom: 10px;
+            border-left: 2px solid #8B0000; /* Red border for content */
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #8B0000; /* Red color for social links */
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <h1>Danish Aslam</h1>
+            <p>I’m a Project Scientist in the Computational Genomics Team, <a href="http://www.scfbio-iitd.res.in/scfbiogroup/biocomputinggroup.htm">SCFBio</a>, IIT Delhi, India.</p>
+        </div>
+    </header>
+
+    <footer>
+        <nav>
+            <a href="index.html#about"><b>About Me</b></a>
+            <a href="Danish_Aslam_Resume.pdf" target="_blank"><b>Resume</b></a>
+            <a href="publications.html"><b>Publications</b></a>
+            <a href="projects.html"><b>Projects</b></a>
+            <a href="activities.html"><b>Activities</b></a>
+            <a href="professional_journey.html"><b>Professional Journey</b></a> <!-- Make sure this link is correct -->
+            <a href="index.html#contact"><b>Contact</b></a>
+        </nav>
+    </footer>
+
+    <main>
+        <section id="professional-journey">
+            <h2>After all, scientists never truly rest; if we were to take a break, who would continue the pursuit of scientific discovery?</h2>
+            <ul class="journey">
+                <li>
+                    <button class="collapsible">Project Scientist, June 2024 – Present</button>
+                    <div class="content">
+                        <p>(a) Genome Workbench Development. [Underway] <br>
+                            Sequence to structure and dynamics to function was an established adage in protein sciences. Our results from the last two research projects demonstrate that this is true for nucleic acids as well.<br>
+                            Building on this, we are working on the development of a universal platform for the identification/prediction of various genic/regulatory elements using structure/energy landscapes within these regions.<br>
+                        <p>(b) Biophysical fingerprinting (profiling) of eukaryotic genome elements using physicochemical properties of DNA. [Completed] <br>
+                            Working with the hypothesis that genomic DNA sequences must convey their functional roles through their biophysical properties, we characterized eight genomic sites, including Coding Sequences, Promoters, Gene boundaries, Exon-Intron boundaries, Start/Stop Codons, ~4.6 million in number, to establish a novel structural and energetic framework for genome annotation.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible">Junior Project Assistant (Tech)</button>
+                    <div class="content">
+                        <p>Details about the junior project assistant (tech) role.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible">Scientific Administrative Assistant</button>
+                    <div class="content">
+                        <p>Details about the scientific administrative assistant role.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible">Research Intern</button>
+                    <div class="content">
+                        <p>Details about the research intern role.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please feel free to contact me for potential collaborations or discussions on my research or for general conversations on science.</p>
+            <p>My current local time is <span id="localTime"></span>.</p>
+        </section>
+        <div class="social-links">
+            <a href="https://www.researchgate.net/profile/Danish-Aslam-4" target="_blank"><b>ResearchGate</b></a>
+            <a href="https://github.com/DanishAslam7" target="_blank"><b>GitHub</b></a>
+            <a href="https://www.linkedin.com/in/danishaslam7" target="_blank"><b>LinkedIn</b></a>
+            <a href="mailto:danish2101125@st.jmi.ac.in"><b>Email</b></a>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript for Collapsible Sections
+        document.addEventListener("DOMContentLoaded", function() {
+            const collapsibles = document.querySelectorAll(".collapsible");
+            
+            collapsibles.forEach(collapsible => {
+                collapsible.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    const content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        });
+
+        // JavaScript for Local Time
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('localTime').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateTime, 60000);
+        updateTime();
+    </script>
+</body>
+</html>
